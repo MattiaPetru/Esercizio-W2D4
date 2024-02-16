@@ -49,7 +49,7 @@ for (let i = 0; i < prices.length; i++) {
   costoFinale += prezzo; //somma dei valori dell'array
 }
 if (utenteCheEffettuaLAcquisto.isAmbassador) {
-  costoFinale = costoFinale * 0.7;
+  costoFinale = costoFinale - (costoFinale * 30) / 100;
 }
 if (costoFinale <= 100) {
   costoFinale += shippingCost;
